@@ -1,12 +1,12 @@
 # Dreamwalker: Sample Efficient Soft Actor-Critic Agent with Dreamer Model
 
-Dreamwalker is an advanced implementation of a Soft Actor-Critic model with Truncated Quantile Critics as well as Deep Dense Reinforcement learning, incorporating a Dreamer model to improve sample efficiency. The project focuses on a walking environment, specifically the bipedal walker environments.
+Dreamwalker is an advanced implementation of a Soft Actor-Critic model with Truncated Quantile Critics as well as Deep Dense Reinforcement learning, incorporating a Dreamer model to improve sample efficiency. The project focuses on a walking environment, specifically the bipedal walker environments. The hyperparameters were optimised with ![Optuna]("https://optuna.org/") running on a GTX 1070 graphics card.
 
 
-![Running boy basic gif]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/tree/main/video/agent-video,episode=125,score=323.gif?raw=true")
+![Running boy basic gif]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/tree/main/gif/agent-video,episode=125,score=323.gif?raw=true")
 *BipedalWalker-v3 environment after 125 episodes of training. Achieved a score of 323 and converged on the policy.*
 
-![Running boy advanced gif]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/tree/main/video/agent-hardcore-video,episode=750,score=313.gif?raw=true")
+![Running boy advanced gif]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/tree/main/gif/agent-hardcore-video,episode=750,score=313.gif?raw=true")
 *BipedalWalkerHardcore-v3 environment after 750 episodes of training. Achieved a score of 313.*
 
 ## Technologies
@@ -56,14 +56,21 @@ To run the Dreamwalker model, follow these steps:
 
 The Dreamwalker agent outperforms vanilla TQC + D2RL implementation in terms of policy performance and sample efficiency. The agent successfully completes the Bipedal Walker environment and its hardcore variant in 74 and 256 episodes respectively. In the regular environment, the agent converges on the optimal policy after about 125 steps. In the hardcore environment, the agent reaches an average reward of 200 at episode 620 learning from scratch, reaching a maximum reward of 297 over the past 10 episodes after 1500 episodes.
 
-![compare graph]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/tree/main/img/compare.png?raw=true")
+![compare graph]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/main/img/compare.png?raw=true")
 *BipedalWalkerHardcore-v3 environment after 750 episodes of training. Achieved a score of 313.*
 
-![hardcore graph]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/tree/main/img/hardcore1500.png?raw=true")
+![hardcore graph]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/main/img/hardcore1500.png?raw=true")
 *BipedalWalkerHardcore-v3 environment after 750 episodes of training. Achieved a score of 313.*
 
 
 ## Limitations and Future Work
 
 Although the Dreamwalker agent shows promising results, there are some limitations. The current dreamer implementation utilises too simplistic architecture and loss functions, which may need to be revised to better simulate the environment and reduce the overestimation bias. The model's training time is also quite extensive due to the complexity of the Dreamer model and the large context length that could be required. Additionally, other replay buffers like the Priority Replay Experience (PRE) could be experimented with to see if it decreases convergence time.
+
+## Original Sources
+
+- **TQC:** Arsenii Kuznetsov et al. “Controlling Overestimation Bias with Truncated Mixture of Continuous Distributional Quantile Critics”. In: arXiv, 2020. doi: 10.48550/ARXIV.2005.04269. url: https://arxiv.org/abs/2005.0426
+- **D2RL:** Samarth Sinha et al. “D2RL: Deep Dense Architectures in Reinforcement Learning”. In: arXiv, 2020. doi: 10.48550/ARXIV.2010.09163. url: https://arxiv.org/abs/2010.09163
+- **ERE:** Che Wang and Keith Ross. “Boosting Soft Actor-Critic: Emphasizing Recent Experience without Forgetting the Past”. In: arXiv, 2019. doi: 10.48550/ARXIV.1906.04009. url: https://arxiv.org/abs/1906.040
+- **Transformer Dreamer:** Chang Chen et al. “TransDreamer: Reinforcement Learning with Transformer World Models”. In: arXiv, 2022. doi: 10.48550/ARXIV.2202.09481. url: https://arxiv.org/abs/2202.0948
 
