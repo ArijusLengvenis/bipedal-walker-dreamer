@@ -3,10 +3,10 @@
 Dreamwalker is an advanced implementation of a Soft Actor-Critic model with Truncated Quantile Critics as well as Deep Dense Reinforcement learning, incorporating a Dreamer model to improve sample efficiency. The project focuses on a walking environment, specifically the bipedal walker environments. The hyperparameters were optimised with ![Optuna]("https://optuna.org/") running on a GTX 1070 graphics card.
 
 
-![Running boy basic gif](https://github.com/ArijusLengvenis/bipedal-walker-dreamer/tree/main/gif/agent-video,episode=125,score=323.gif?raw=true)
+![Running boy basic gif](https://github.com/ArijusLengvenis/bipedal-walker-dreamer/tree/main/gif/agent-video,episode=125,score=323.gif)
 *BipedalWalker-v3 environment after 125 episodes of training. Achieved a score of 323 and converged on the policy.*
 
-![Running boy advanced gif](https://github.com/ArijusLengvenis/bipedal-walker-dreamer/tree/main/gif/agent-hardcore-video,episode=750,score=313.gif?raw=true)
+![Running boy advanced gif](https://github.com/ArijusLengvenis/bipedal-walker-dreamer/tree/main/gif/agent-hardcore-video,episode=750,score=313.gif)
 *BipedalWalkerHardcore-v3 environment after 750 episodes of training. Achieved a score of 313.*
 
 ## Technologies
