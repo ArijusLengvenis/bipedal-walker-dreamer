@@ -61,9 +61,9 @@ To run the Dreamwalker model, follow these steps:
 
 The Dreamwalker agent outperforms vanilla TQC + D2RL implementation in terms of policy performance and sample efficiency. The agent successfully completes the Bipedal Walker environment and its hardcore variant in 74 and 256 episodes respectively. In the regular environment, the agent converges on the optimal policy after about 125 steps. In the hardcore environment, the agent reaches an average reward of 200 at episode 620 learning from scratch, reaching a maximum reward of 297 over the past 10 episodes after 1500 episodes.
 
-<div align="center">
-    <img style="background-color: grey; background-blend-mode: multiply;" src="https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/main/img/compare.png?raw=true" alt="compare graph"/>
-    <img style="background-color: grey; background-blend-mode: multiply;" src="https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/main/img/hardcore1500.png?raw=true" alt="hardcore graph"/>
+<div style="background-color: grey;" align="center">
+    <img src="https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/main/img/compare.png?raw=true" alt="compare graph"/>
+    <img src="https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/main/img/hardcore1500.png?raw=true" alt="hardcore graph"/>
 </div>
 
 *Fig. 1: Ablation analysis of Dreamwalker compared to more basic models. Fig. 2: the average reward of Dreamwalker of the last 10 steps in the hardcore environment.*
