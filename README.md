@@ -3,10 +3,10 @@
 Dreamwalker is an advanced implementation of a Soft Actor-Critic model with Truncated Quantile Critics as well as Deep Dense Reinforcement learning, incorporating a Dreamer model to improve sample efficiency. The project focuses on a walking environment, specifically the bipedal walker environments.
 
 
-![Running boy basic gif]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/main/video/agent-video,episode=125,score=323.gif?raw=true")
+![Running boy basic gif]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/tree/main/video/agent-video,episode=125,score=323.gif?raw=true")
 *BipedalWalker-v3 environment after 125 episodes of training. Achieved a score of 323 and converged on the policy.*
 
-![Running boy advanced gif]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/main/video/agent-hardcore-video,episode=750,score=313.gif?raw=true")
+![Running boy advanced gif]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/tree/main/video/agent-hardcore-video,episode=750,score=313.gif?raw=true")
 *BipedalWalkerHardcore-v3 environment after 750 episodes of training. Achieved a score of 313.*
 
 ## Technologies
@@ -56,10 +56,10 @@ To run the Dreamwalker model, follow these steps:
 
 The Dreamwalker agent outperforms vanilla TQC + D2RL implementation in terms of policy performance and sample efficiency. The agent successfully completes the Bipedal Walker environment and its hardcore variant in 74 and 256 episodes respectively. In the regular environment, the agent converges on the optimal policy after about 125 steps. In the hardcore environment, the agent reaches an average reward of 200 at episode 620 learning from scratch, reaching a maximum reward of 297 over the past 10 episodes after 1500 episodes.
 
-![compare graph]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/main/img/compare.png?raw=true")
+![compare graph]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/tree/main/img/compare.png?raw=true")
 *BipedalWalkerHardcore-v3 environment after 750 episodes of training. Achieved a score of 313.*
 
-![hardcore graph]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/main/img/hardcore1500.png?raw=true")
+![hardcore graph]("https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/tree/main/img/hardcore1500.png?raw=true")
 *BipedalWalkerHardcore-v3 environment after 750 episodes of training. Achieved a score of 313.*
 
 
