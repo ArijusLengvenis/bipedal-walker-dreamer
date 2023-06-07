@@ -1,6 +1,6 @@
 # Dreamwalker: Sample Efficient Soft Actor-Critic Agent with Dreamer Model
 
-Dreamwalker is an advanced implementation of a Soft Actor-Critic model with Truncated Quantile Critics as well as Deep Dense Reinforcement learning, incorporating a Dreamer model to improve sample efficiency. The project focuses on a walking environment, specifically the bipedal walker environments. The hyperparameters were optimised with ![Optuna](https://optuna.org/) running on a GTX 1070 graphics card.
+Dreamwalker is an advanced implementation of a Soft Actor-Critic model with Truncated Quantile Critics as well as Deep Dense Reinforcement learning, incorporating a Dreamer model to improve sample efficiency. The project focuses on a walking environment, specifically the bipedal walker environments. The hyperparameters were optimised with [Optuna](https://optuna.org/) running on a GTX 1070 graphics card.
 
 <div align="center">
     <img src="https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/main/gif/agent-video%2Cepisode%3D125%2Cscore%3D323.gif" alt="Running boy basic gif"/>
