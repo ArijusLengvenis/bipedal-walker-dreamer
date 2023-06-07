@@ -46,7 +46,7 @@ Given sufficient training data and epochs, this model can essentially replace th
 
 ## Repository Structure
 
-This repository consists of a Jupyter notebook, `agent_code.ipynb`, which contains all the code related to methods, training, and testing loop of the Dreamwalker model.
+This repository consists of a Jupyter notebook, `agent_code.ipynb`, which contains all the code related to methods, training, and testing loop of the Dreamwalker model. It also contains videos and logs of the attempt with seed 42 for everything that I was able to achieve with this code.
 
 ## Usage
 
@@ -62,9 +62,11 @@ To run the Dreamwalker model, follow these steps:
 The Dreamwalker agent outperforms vanilla TQC + D2RL implementation in terms of policy performance and sample efficiency. The agent successfully completes the Bipedal Walker environment and its hardcore variant in 74 and 256 episodes respectively. In the regular environment, the agent converges on the optimal policy after about 125 steps. In the hardcore environment, the agent reaches an average reward of 200 at episode 620 learning from scratch, reaching a maximum reward of 297 over the past 10 episodes after 1500 episodes.
 
 ![compare graph](https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/main/img/compare.png?raw=true)
+
 *BipedalWalkerHardcore-v3 environment after 750 episodes of training. Achieved a score of 313.*
 
 ![hardcore graph](https://github.com/ArijusLengvenis/bipedal-walker-dreamer/blob/main/img/hardcore1500.png?raw=true)
+
 *BipedalWalkerHardcore-v3 environment after 750 episodes of training. Achieved a score of 313.*
 
 
